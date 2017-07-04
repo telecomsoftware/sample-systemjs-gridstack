@@ -11,40 +11,13 @@ SystemJS.config({
   packages: {
     "jspm17": {
       "main": "app.js"
-    },
-    "npm:jquery-ui@1.12.1": {
-      "meta": {
-      },
-      "map": {
-        "./data": "npm:jquery-ui@1.12.1/ui/data.js",
-        "./widget": "npm:jquery-ui@1.12.1/ui/widget.js",
-        "./disable-selection": "npm:jquery-ui@1.12.1/ui/disable-selection.js",
-        "./focusable": "npm:jquery-ui@1.12.1/ui/focusable.js",
-        "./form": "npm:jquery-ui@1.12.1/ui/form.js",
-        "./ie": "npm:jquery-ui@1.12.1/ui/ie.js",
-        "./keycode": "npm:jquery-ui@1.12.1/ui/keycode.js",
-        "./labels": "npm:jquery-ui@1.12.1/ui/labels.js",
-        "./jquery-1-7": "npm:jquery-ui@1.12.1/ui/jquery-1-7.js",
-        "./plugin": "npm:jquery-ui@1.12.1/ui/plugin.js",
-        "./safe-active-element": "npm:jquery-ui@1.12.1/ui/safe-active-element.js",
-        "./safe-blur": "npm:jquery-ui@1.12.1/ui/safe-blur.js",
-        "./scroll-parent": "npm:jquery-ui@1.12.1/ui/scroll-parent.js",
-        "./tabbable": "npm:jquery-ui@1.12.1/ui/tabbable.js",
-        "./unique-id": "npm:jquery-ui@1.12.1/ui/unique-id.js",
-        "./version": "npm:jquery-ui@1.12.1/ui/version.js",
-        "./widgets/draggable": "npm:jquery-ui@1.12.1/ui/widgets/draggable.js",
-        "./widgets/droppable": "npm:jquery-ui@1.12.1/ui/widgets/droppable.js",
-        "./widgets/resizable": "npm:jquery-ui@1.12.1/ui/widgets/resizable.js",
-        "./widgets/mouse": "npm:jquery-ui@1.12.1/ui/widgets/mouse.js",
-      },
-      defaultExtension: 'js',
     }
   },
   meta: {
-    "npm:gridstack@0.3.0/dist/gridstack.jQueryUi.js": {
-      "format": "global",
+    "npm:gridstack@0.3.1/dist/gridstack.jQueryUi.js": {
+      "format": "amd",
       "deps": [
-        "jquery-ui",
+        "jquery-ui"
       ]
     }
   }
@@ -65,9 +38,10 @@ SystemJS.config({
     "events": "npm:jspm-nodelibs-events@0.2.2",
     "font-awesome": "npm:font-awesome@4.7.0",
     "fs": "npm:jspm-nodelibs-fs@0.2.1",
-    "gridstack": "npm:gridstack@0.3.0",
+    "gridstack": "github:telecomsoftware/gridstack.js@0.3.1",
     "jquery": "npm:jquery@3.2.1",
     "jquery-ui": "npm:jquery-ui@1.12.1",
+    "lodash": "npm:lodash@4.17.4",
     "os": "npm:jspm-nodelibs-os@0.2.2",
     "path": "npm:jspm-nodelibs-path@0.2.3",
     "process": "npm:jspm-nodelibs-process@0.2.1",
@@ -77,6 +51,32 @@ SystemJS.config({
     "vm": "npm:jspm-nodelibs-vm@0.2.1"
   },
   packages: {
+    "npm:jquery-ui@1.12.1": {
+      "meta": {},
+      "map": {
+        "./data": "npm:jquery-ui@1.12.1/ui/data.js",
+        "./widget": "npm:jquery-ui@1.12.1/ui/widget.js",
+        "./disable-selection": "npm:jquery-ui@1.12.1/ui/disable-selection.js",
+        "./focusable": "npm:jquery-ui@1.12.1/ui/focusable.js",
+        "./form": "npm:jquery-ui@1.12.1/ui/form.js",
+        "./ie": "npm:jquery-ui@1.12.1/ui/ie.js",
+        "./keycode": "npm:jquery-ui@1.12.1/ui/keycode.js",
+        "./labels": "npm:jquery-ui@1.12.1/ui/labels.js",
+        "./jquery-1-7": "npm:jquery-ui@1.12.1/ui/jquery-1-7.js",
+        "./plugin": "npm:jquery-ui@1.12.1/ui/plugin.js",
+        "./safe-active-element": "npm:jquery-ui@1.12.1/ui/safe-active-element.js",
+        "./safe-blur": "npm:jquery-ui@1.12.1/ui/safe-blur.js",
+        "./scroll-parent": "npm:jquery-ui@1.12.1/ui/scroll-parent.js",
+        "./tabbable": "npm:jquery-ui@1.12.1/ui/tabbable.js",
+        "./unique-id": "npm:jquery-ui@1.12.1/ui/unique-id.js",
+        "./version": "npm:jquery-ui@1.12.1/ui/version.js",
+        "./widgets/draggable": "npm:jquery-ui@1.12.1/ui/widgets/draggable.js",
+        "./widgets/droppable": "npm:jquery-ui@1.12.1/ui/widgets/droppable.js",
+        "./widgets/resizable": "npm:jquery-ui@1.12.1/ui/widgets/resizable.js",
+        "./widgets/mouse": "npm:jquery-ui@1.12.1/ui/widgets/mouse.js"
+      },
+      "defaultExtension": "js"
+    },
     "npm:font-awesome@4.7.0": {
       "map": {
         "css": "github:systemjs/plugin-css@0.1.35"
@@ -319,13 +319,6 @@ SystemJS.config({
     "npm:string_decoder@1.0.3": {
       "map": {
         "safe-buffer": "npm:safe-buffer@5.1.1"
-      }
-    },
-    "npm:gridstack@0.3.0": {
-      "map": {
-        "jquery": "npm:jquery@3.2.1",
-        "jquery-ui": "npm:jquery-ui@1.12.1",
-        "lodash": "npm:lodash@4.17.4"
       }
     }
   }
