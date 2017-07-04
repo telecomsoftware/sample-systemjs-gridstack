@@ -1,6 +1,14 @@
 <html>
 
-<head></head>
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="jspm_packages/npm/gridstack@0.3.0/dist/gridstack.css" />
+    <style>
+        div.grid-stack-item {
+            background: silver;
+        }
+    </style>
+</head>
 
 <body>
     <script src="jspm_packages/system.js"></script>
@@ -8,7 +16,18 @@
     <script>
         SystemJS.import('font-awesome/css/font-awesome.css!');
     </script>
+    <script src="test-gridstack.js"></script>
     <p>-- <i class="fa fa-twitter"></i> --</p>
+
+    <div class="grid-stack">
+        <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+            <div class="grid-stack-item-content">P1</div>
+        </div>
+        <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4">
+            <div class="grid-stack-item-content">P2</div>
+        </div>
+    </div>
+
 </body>
 
 </html>
