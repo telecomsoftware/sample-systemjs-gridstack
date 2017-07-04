@@ -14,6 +14,12 @@ SystemJS.config({
     }
   },
   meta: {
+    "npm:gridstack@0.3.0/dist/gridstack.jQueryUi.js": {
+      "format": "global",
+      "deps": [
+        "jquery-ui",
+      ]
+    }
   }
 });
 
