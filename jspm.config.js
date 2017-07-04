@@ -11,6 +11,33 @@ SystemJS.config({
   packages: {
     "jspm17": {
       "main": "app.js"
+    },
+    "npm:jquery-ui@1.12.1": {
+      "meta": {
+      },
+      "map": {
+        "./data": "npm:jquery-ui@1.12.1/ui/data.js",
+        "./widget": "npm:jquery-ui@1.12.1/ui/widget.js",
+        "./disable-selection": "npm:jquery-ui@1.12.1/ui/disable-selection.js",
+        "./focusable": "npm:jquery-ui@1.12.1/ui/focusable.js",
+        "./form": "npm:jquery-ui@1.12.1/ui/form.js",
+        "./ie": "npm:jquery-ui@1.12.1/ui/ie.js",
+        "./keycode": "npm:jquery-ui@1.12.1/ui/keycode.js",
+        "./labels": "npm:jquery-ui@1.12.1/ui/labels.js",
+        "./jquery-1-7": "npm:jquery-ui@1.12.1/ui/jquery-1-7.js",
+        "./plugin": "npm:jquery-ui@1.12.1/ui/plugin.js",
+        "./safe-active-element": "npm:jquery-ui@1.12.1/ui/safe-active-element.js",
+        "./safe-blur": "npm:jquery-ui@1.12.1/ui/safe-blur.js",
+        "./scroll-parent": "npm:jquery-ui@1.12.1/ui/scroll-parent.js",
+        "./tabbable": "npm:jquery-ui@1.12.1/ui/tabbable.js",
+        "./unique-id": "npm:jquery-ui@1.12.1/ui/unique-id.js",
+        "./version": "npm:jquery-ui@1.12.1/ui/version.js",
+        "./widgets/draggable": "npm:jquery-ui@1.12.1/ui/widgets/draggable.js",
+        "./widgets/droppable": "npm:jquery-ui@1.12.1/ui/widgets/droppable.js",
+        "./widgets/resizable": "npm:jquery-ui@1.12.1/ui/widgets/resizable.js",
+        "./widgets/mouse": "npm:jquery-ui@1.12.1/ui/widgets/mouse.js",
+      },
+      defaultExtension: 'js',
     }
   },
   meta: {
