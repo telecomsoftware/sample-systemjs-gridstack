@@ -14,7 +14,10 @@ SystemJS.config({
     }
   },
   meta: {
-    "npm:gridstack@0.3.1/dist/gridstack.jQueryUi.js": {
+    "npm:gridstack@0.3.0/dist/gridstack.js": {
+      "format": "amd"
+    },
+    "npm:gridstack@0.3.0/dist/gridstack.jQueryUi.js": {
       "format": "amd",
       "deps": [
         "jquery-ui"
@@ -38,7 +41,7 @@ SystemJS.config({
     "events": "npm:jspm-nodelibs-events@0.2.2",
     "font-awesome": "npm:font-awesome@4.7.0",
     "fs": "npm:jspm-nodelibs-fs@0.2.1",
-    "gridstack": "github:telecomsoftware/gridstack.js@0.3.1",
+    "gridstack": "npm:gridstack@0.3.0",
     "jquery": "npm:jquery@3.2.1",
     "jquery-ui": "npm:jquery-ui@1.12.1",
     "lodash": "npm:lodash@4.17.4",
@@ -319,6 +322,13 @@ SystemJS.config({
     "npm:string_decoder@1.0.3": {
       "map": {
         "safe-buffer": "npm:safe-buffer@5.1.1"
+      }
+    },
+    "npm:gridstack@0.3.0": {
+      "map": {
+        "jquery-ui": "npm:jquery-ui@1.12.1",
+        "jquery": "npm:jquery@3.2.1",
+        "lodash": "npm:lodash@4.17.4"
       }
     }
   }
